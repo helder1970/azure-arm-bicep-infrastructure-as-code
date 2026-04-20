@@ -1,5 +1,4 @@
 using './storageAccount.bicep'
 
-param location = 'australiaeast'
+param location = 'westeurope'
 param skuName = 'Standard_LRS'
-

@@ -21,7 +21,7 @@ param deploymentTimestamp string = utcNow()
 
 // Variables
 
-var storageAccountName = toLower('sa${uniqueString(resourceGroup().id)}')
+var storageAccountName = toLower('ha${uniqueString(resourceGroup().id)}')
 var tags = union(resourceGroup().tags, {
   CreatedBy: 'Bicep Template'
   CreatedOn: deploymentTimestamp
